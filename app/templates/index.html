@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fitbit App</title>
+</head>
+
+<body>
+{% if not session.user %}
+    <a href="{{ permission_url }}">Log In with Fitbit</a>
+{% else %}
+    <ul>
+        <li>
+            <a href="/device">Get Device Data</a>
+        </li>
+        <li>
+            <a href="/heart">Get Heart Data</a>
+        </li>
+        <li>
+            <a href="/activities">Get Activities Data</a>
+        </li>
+        <li>
+            <a href="/steps">Get Steps Data</a>
+        </li>
+        <li>
+            <a href="/sleep">Get Sleep Data</a>
+        </li>
+    </ul>
+{% endif %}
+</body>
+
+</html>
