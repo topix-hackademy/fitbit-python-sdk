@@ -1,4 +1,4 @@
-# Social Listener
+# Fitbit-python-sdk
 
 Python project based on Flask to test Fitbit API
 
